@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Individual</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section id="main">
+        <div class="header">
+            <img class = smalllogo src="./Assets/Logo (1).png" alt="Company's Logo">
+            <img class = biglogo src="./Assets/Logo.png" alt="Company's logo">
+            <h1>For Individuals</h1>
+            <p class="desktoptext">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
+            <p class="mobiletext">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+        </div>
+        <form class="form">
+        <div class="flexdivs">
+            <div>
+                <label>First name</label><br />
+                <input type="text" name="firstname" placeholder="Tolu"/>
+            </div>
+            <div>
+                <label>Last name</label><br />
+                <input type="text" name="last_name" placeholder="Last name"/>
+            </div>
+        </div>
+
+        <div class="flexdivs">
+            <div>
+            <label>Gender</label><br />
+            <select class="genderwidth">
+              <option value="" disabled selected hidden>Select here</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            </div>
+
+            <div>
+                <label>Date of Birth</label><br />
+                <!-- <input type="text" placeholder="Select here"/> -->
+                <input type="text" id="date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Select here">
+            </div>
+        </div>
+
+        <div class="flexdivs">
+            <div>
+                <label>Weight (KG)</label><br />
+                <input type="text" name="firstname" placeholder="Enter Height here"/>
+            </div>
+
+            <div>
+                <label>Height (CM)</label><br />
+                <input type="text" name="firstname" placeholder="Enter Weight here"/>
+            </div>
+        </div>
+
+            <label>Activity Level</label><br />
+            <select>
+              <option value="" disabled selected hidden>Select here</option>
+            </select>
+
+            <p>
+            <label>password</label><br />
+            <input type="password" id="password" name="password" placeholder="">
+            </p>
+
+            <input type="submit" value="Register">
+
+            <footer>
+                By clicking Register, you agree to our <a href="/terms">Terms of Use</a> and our <a href="/terms">Privacy Policy</a>
+            </footer>
+        </form>
+    </section>
+</body>
+</html>
